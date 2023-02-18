@@ -1,38 +1,143 @@
+body {
+  font-family: "Oxygen", sans-serif;
+}
+
 .App {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 0 auto;
+  border: none;
+}
+
+.Weather {
+  background: linear-gradient(to top, #ebbba7 0%, #cfc7f8 100%);
+  padding: 20px 50px;
+  border: 1px solid #5c5470;
+  border-radius: 10px;
+}
+
+.Weather .search-box {
+  display: flex;
+  justify-content: space-evenly;
+  border: 1px solid #5c5470;
+}
+
+.Weather .btn {
+  color: #5c5470;
+  font-weight: 500;
+  border: 1px solid #5c5470;
+}
+
+.Weather .btn:hover {
+  background: #5c5470;
+  color: white;
+  cursor: pointer;
+}
+
+h1 {
+  color: #5c5470;
+  font-size: 44px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.current-place {
+  margin: 20px 0 0 70px;
+  text-align: left;
+}
+
+.current-place canvas {
+  vertical-align: top;
+  margin-right: 20px;
+}
+
+.overview,
+.text-capitalize {
+  color: #5c5470;
+  font-size: 18px;
+}
+
+.weather {
+  margin-top: 20px;
+}
+
+.current-temp {
+  color: #5c5470;
+  font-size: 54px;
+  font-weight: 700;
+}
+
+.units {
+  color: #5c5470;
+  position: relative;
+  font-size: 16px;
+  top: -28px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+li {
+  list-style: none;
+  color: #5c5470;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+span {
+  color: #5c5470;
+  font-weight: 700;
+}
+
+.day-forecast {
+  color: #5c5470;
+  font-size: 18px;
+  font-weight: 700;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.temp-min {
+  color: #5c5470;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+footer {
+  color: #5c5470;
+  text-align: center;
+}
+
+.coder-link,
+.github-link {
+  color: #5c5470;
+  font-weight: 700;
+}
+
+.coder-link:hover,
+.github-link:hover {
+  color: #5c5470;
+  text-decoration: none;
+}
+
+@media (max-width: 475px) {
+  li.humidity,
+  li.wind {
+    display: inline-flex;
+    margin-left: -25px;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  strong {
+    margin: 0;
+    margin-right: 5px;
   }
-  to {
-    transform: rotate(360deg);
+
+  li span {
+    margin-right: 5px;
+  }
+
+  .Weather h1 {
+    margin: 0 5px;
+    margin-top: 10px;
   }
 }
