@@ -118,7 +118,7 @@ footer {
   text-decoration: none;
 }
 
-@media (min-width: 280px) {
+@media (max-width: 900px) {
    html {
     overflow-x: hidden;
   }
@@ -143,15 +143,6 @@ footer {
   }
 
   h1 {
-    font-size: 34px;
     margin-top: 25px;
   }
-
-  .current-temp {
-    font-size: 44px;
-  }
-
-  .units {
-  top: -20px;
-}
 }
