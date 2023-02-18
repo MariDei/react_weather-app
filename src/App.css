@@ -108,36 +108,50 @@ footer {
   text-align: center;
 }
 
-.coder-link,
 .github-link {
   color: #5c5470;
   font-weight: 700;
 }
 
-.coder-link:hover,
 .github-link:hover {
   color: #5c5470;
   text-decoration: none;
 }
 
-@media (max-width: 475px) {
+@media (min-width: 280px) {
+   html {
+    overflow-x: hidden;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+  
+  .Weather {
+   padding: 10px 5px;
+   margin: 0 5px;
+  }
+
   li.humidity,
   li.wind {
     display: inline-flex;
-    margin-left: -25px;
   }
 
-  strong {
-    margin: 0;
-    margin-right: 5px;
+  .current-place {
+   margin: 10px 0 0 30px;
+   text-align: left;
   }
 
-  li span {
-    margin-right: 5px;
+  h1 {
+    font-size: 34px;
+    margin-top: 25px;
   }
 
-  .Weather h1 {
-    margin: 0 5px;
-    margin-top: 10px;
+  .current-temp {
+    font-size: 44px;
   }
+
+  .units {
+  top: -20px;
+}
 }
